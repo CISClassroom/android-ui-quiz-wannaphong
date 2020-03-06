@@ -1,5 +1,6 @@
 package com.wannaphong.liststudent
 
+import android.content.Intent
 import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,6 +22,11 @@ class Show : AppCompatActivity() {
         }
         else{
             img.setImageDrawable(getDrawable(R.drawable.w))
+        }
+        back.setOnClickListener {
+            var i = Intent(this, MainActivity::class.java)
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(i)
         }
     }
 }
