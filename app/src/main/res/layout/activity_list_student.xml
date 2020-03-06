@@ -22,8 +22,8 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="TextView"
-            android:textAlignment="textStart" />
+            android:text="\n\nTextView"
+            android:textAlignment="viewStart" />
 
         <TextView
             android:id="@+id/textView2"
