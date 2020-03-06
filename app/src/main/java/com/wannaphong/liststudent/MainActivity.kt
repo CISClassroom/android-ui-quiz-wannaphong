@@ -1,5 +1,6 @@
 package com.wannaphong.liststudent
 
+import android.content.Intent
 import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -35,5 +36,11 @@ class MainActivity : AppCompatActivity() {
             R.layout.activity_list_student,
             student
         )
+
+        listview.setOnItemClickListener { parent, view, position, id ->
+            var i = Intent(this, Show::class.java)
+            i.putExtra("i", position)
+            startActivity(i)
+        }
     }
 }
