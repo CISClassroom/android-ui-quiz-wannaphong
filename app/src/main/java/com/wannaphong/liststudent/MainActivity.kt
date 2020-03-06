@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
         var i =0
         while (i<students60.size){
             if ("นาย" in students60[i]){
-                student.add(Student(students60[i], students60id[i], R.drawable.m))
+                student.add(Student("  "+students60[i], "  "+students60id[i], R.drawable.m))
             }
             else{
-                student.add(Student(students60[i], students60id[i], R.drawable.w))
+                student.add(Student("  "+students60[i], "  "+students60id[i], R.drawable.w))
             }
             i = i+1
         }
