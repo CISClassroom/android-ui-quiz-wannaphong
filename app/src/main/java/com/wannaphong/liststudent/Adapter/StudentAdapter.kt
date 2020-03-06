@@ -26,6 +26,7 @@ class StudentAdapter (val mCtx: Context,
         val student:Student = items[position]
 
         name.text = student.name
+        id.text = student.id
         try {
             icon.setImageDrawable(mCtx.getDrawable(student.icon))
         }

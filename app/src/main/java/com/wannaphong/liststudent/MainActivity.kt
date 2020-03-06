@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             }
             i = i+1
         }
-        
+
         var listview: ListView = findViewById(R.id.itemlist)
 
         listview.adapter = StudentAdapter(
